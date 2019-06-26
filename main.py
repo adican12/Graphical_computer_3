@@ -378,14 +378,14 @@ class Application(Frame):
 
 Orthographic - press the button to present Orthographic projection
 
-Cavalier - Set up the Angle next to the button - and the press the button
-Cabinet - Set up the Angle next to the button - and the press the button
+Cavalier - Set up the Angle next to the button - Try minus - and the press the button
+Cabinet - Set up the Angle next to the button - Try minus  - and the press the button
 
-Perspective -Set up the Distance next to the button - and the press the button
+Perspective -Set up the Distance next to the button - Try minus - and the press the button
 
 Scale Up & Down - Choose the Percentage under the button and then  Press the button Scale Up or Down
 
-Rotate Paint - Choose the Angel next to the button and then  Press the button Rotate X, Y ,Z
+Rotate Paint - Choose the Angel next to the button - Try minus - and then  Press the button Rotate X, Y ,Z
 
 Clear Canvas - press on the button - clear the Canvas
 

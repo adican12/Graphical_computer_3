@@ -44,26 +44,9 @@ class _Point:
 class Face:
     def __init__(self):
         self.point_array = []
-        self.visable = False
         self.z_index = 0
         self.color = "green"
         self.d = 0
-
-
-# parser helper - get the first latter from line
-def get_tag(line):
-    # split the line - get first symbol
-    l = line.split(":")
-
-    # L - represent Line
-    if (l[0] == "Q"):
-        return l[0]
-    # C - represent Circle
-    elif (l[0] == "P"):
-        return l[0]
-
-    else:
-        print("something went wrong = function.py - get_tag")
 
 
 # read from the insert file
@@ -184,27 +167,6 @@ def rotate_paintZ(self):
             t.y = X * math.sin(angle) + (t.y * math.cos(angle))
     except:
         print("total is empty")
-
-
-# Calculate Move - new position for point
-def move_paint(self):
-    # check for valid distance
-    ranger = max(abs(self.event_point[1].x - self.event_point[0].x), abs(self.event_point[1].y - self.event_point[0].y))
-
-    # make sure ranger is none 0
-    if ranger != 0:
-        # calculate dx dy
-        dx = (self.event_point[1].x - self.event_point[0].x)
-        dy = (self.event_point[1].y - self.event_point[0].y)
-        try:
-            # for every point add dx dy accordingly
-            for t in self.total:
-                if t[0] == "Lines" or t[0] == "Circels" or t[0] == "Bezier":
-                    for i in range(1, len(t)):
-                        t[i].x = t[i].x + dx
-                        t[i].y = t[i].y + dy
-        except:
-            print("total is empty")
 
 
 # normalize points
